@@ -86,7 +86,7 @@
       <div class="product">
         <h3>Product 1: Title Here</h3>
         <div class="media-wrapper">
-          <img src="PLACEHOLDER_IMAGE_URL_1.jpg" alt="Product 1 preview">
+          <img src=["PLACEHOLDER_IMAGE_URL_1.jpg"](https://github.com/61Lexi/friends/blob/main/WhatsApp%20Image%202025-10-23%20at%2023.17.12.jpeg) alt="Product 1 preview">
         </div>
         <p>Short description for product 1. Format: PDF / Image / Video etc.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT1')">Buy Now</button>
