@@ -61,6 +61,16 @@
       padding: 20px;
       color: #666;
     }
+    .media-wrapper {
+      margin-bottom: 12px;
+      width: 100%;
+    }
+    .media-wrapper img,
+    .media-wrapper video {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
@@ -72,72 +82,136 @@
   <div class="container">
     <div class="productlist">
 
-      <!-- Product 1 -->
+      <!-- Product 1 (Image variant) -->
       <div class="product">
         <h3>Product 1: Title Here</h3>
+        <div class="media-wrapper">
+          <img src="PLACEHOLDER_IMAGE_URL_1.jpg" alt="Product 1 preview">
+        </div>
         <p>Short description for product 1. Format: PDF / Image / Video etc.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT1')">Buy Now</button>
       </div>
 
-      <!-- Product 2 -->
+      <!-- Product 2 (Video variant) -->
       <div class="product">
         <h3>Product 2: Title Here</h3>
-        <p>Short description for product 2.</p>
+        <div class="media-wrapper">
+          <video controls poster="PLACEHOLDER_THUMB_URL_2.jpg">
+            <source src="PLACEHOLDER_VIDEO_URL_2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p>Short description for product 2. Format: Video tutorial.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT2')">Buy Now</button>
       </div>
 
-      <!-- Product 3 -->
+      <!-- Product 3 (Image variant) -->
       <div class="product">
         <h3>Product 3: Title Here</h3>
+        <div class="media-wrapper">
+          <img src="PLACEHOLDER_IMAGE_URL_3.jpg" alt="Product 3 preview">
+        </div>
         <p>Short description for product 3.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT3')">Buy Now</button>
       </div>
 
-      <!-- Product 4 -->
+      <!-- Product 4 (Video variant) -->
       <div class="product">
         <h3>Product 4: Title Here</h3>
+        <div class="media-wrapper">
+          <video controls poster="PLACEHOLDER_THUMB_URL_4.jpg">
+            <source src="PLACEHOLDER_VIDEO_URL_4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <p>Short description for product 4.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT4')">Buy Now</button>
       </div>
 
-      <!-- Product 5 -->
+      <!-- Product 5 (Image variant) -->
       <div class="product">
         <h3>Product 5: Title Here</h3>
+        <div class="media-wrapper">
+          <img src="PLACEHOLDER_IMAGE_URL_5.jpg" alt="Product 5 preview">
+        </div>
         <p>Short description for product 5.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT5')">Buy Now</button>
       </div>
 
-      <!-- Product 6 -->
+      <!-- Product 6 (Video variant) -->
       <div class="product">
         <h3>Product 6: Title Here</h3>
+        <div class="media-wrapper">
+          <video controls poster="PLACEHOLDER_THUMB_URL_6.jpg">
+            <source src="PLACEHOLDER_VIDEO_URL_6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <p>Short description for product 6.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT6')">Buy Now</button>
       </div>
 
-      <!-- Product 7 -->
+      <!-- Product 7 (Image variant) -->
       <div class="product">
         <h3>Product 7: Title Here</h3>
+        <div class="media-wrapper">
+          <img src="PLACEHOLDER_IMAGE_URL_7.jpg" alt="Product 7 preview">
+        </div>
         <p>Short description for product 7.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT7')">Buy Now</button>
       </div>
 
-      <!-- Product 8 -->
+      <!-- Product 8 (Video variant) -->
       <div class="product">
         <h3>Product 8: Title Here</h3>
+        <div class="media-wrapper">
+          <video controls poster="PLACEHOLDER_THUMB_URL_8.jpg">
+            <source src="PLACEHOLDER_VIDEO_URL_8.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <p>Short description for product 8.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT8')">Buy Now</button>
       </div>
 
-      <!-- Product 9 -->
+      <!-- Product 9 (Image variant) -->
       <div class="product">
         <h3>Product 9: Title Here</h3>
+        <div class="media-wrapper">
+          <img src="PLACEHOLDER_IMAGE_URL_9.jpg" alt="Product 9 preview">
+        </div>
         <p>Short description for product 9.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT9')">Buy Now</button>
       </div>
 
-      <!-- Product 10 -->
+      <!-- Product 10 (Video variant) -->
       <div class="product">
         <h3>Product 10: Title Here</h3>
+        <div class="media-wrapper">
+          <video controls poster="PLACEHOLDER_THUMB_URL_10.jpg">
+            <source src="PLACEHOLDER_VIDEO_URL_10.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <p>Short description for product 10.</p>
         <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT10')">Buy Now</button>
       </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Your Name / Brand. All Rights Reserved.
+  </footer>
+
+  <script>
+    function openCheckout(link) {
+      if (!link || link.startsWith('CHECKOUT_LINK_')) {
+        alert('Checkout link not configured yet.');
+        return;
+      }
+      window.open(link, '_blank');
+    }
+  </script>
+</body>
+</html>
