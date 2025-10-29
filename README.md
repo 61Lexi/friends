@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meine Digitalen Produkte</title>
+  <title>My Digital Products Store</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background-color: #f4f4f4;
       color: #333;
     }
     header {
-      background: #2d2d2d;
-      color: white;
+      background-color: #222;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 20px;
     }
-    .product-list {
+    .productlist {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
       gap: 20px;
     }
     .product {
-      background: white;
+      background-color: #fff;
       border: 1px solid #ddd;
       border-radius: 8px;
       padding: 16px;
@@ -39,14 +39,14 @@
       justify-content: space-between;
     }
     .product h3 {
-      margin-top: 0;
+      margin: 0 0 10px;
     }
     .product p {
       flex-grow: 1;
     }
     .product button {
-      background: #007bff;
-      color: white;
+      background-color: #007bff;
+      color: #fff;
       border: none;
       padding: 10px 16px;
       border-radius: 4px;
@@ -54,7 +54,7 @@
       font-size: 1em;
     }
     .product button:hover {
-      background: #0056b3;
+      background-color: #0056b3;
     }
     footer {
       text-align: center;
@@ -65,87 +65,79 @@
 </head>
 <body>
   <header>
-    <h1>Digitale Produkte – Direkt via Krypto bezahlen</h1>
-    <p>Einfaches, sicheres Bezahlen mit MaxelPay</p>
+    <h1>Digital Products – Pay Easily with Crypto</h1>
+    <p>Browse below and pay securely using MaxelPay via crypto.</p>
   </header>
+
   <div class="container">
-    <div class="product-list">
-      <!-- Produkt 1 -->
-      <div class="product">
-        <h3>Produkt 1: Titel hier</h3>
-        <p>Kurze Beschreibung zu Produkt 1. Format: PDF / Bild / Video etc.</p>
-        <button onclick="openCheckout('PRODUCT1_CHECKOUT_LINK')">Jetzt kaufen</button>
-      </div>
-      <!-- Produkt 2 -->
-      <div class="product">
-        <h3>Produkt 2: Titel hier</h3>
-        <p>Kurze Beschreibung zu Produkt 2.</p>
-        <button onclick="openCheckout('PRODUCT2_CHECKOUT_LINK')">Jetzt kaufen</button>
-      </div>
-      <!-- Produkt 3 -->
-      <div class="product">
-        <h3>Produkt 3: Titel hier</h3>
-        <p>Kurze Beschreibung zu Produkt 3.</p>
-        <button onclick="openCheckout('PRODUCT3_CHECKOUT_LINK')">Jetzt kaufen</button>
-      </div>
-      <!-- Produkt 4 -->
-      <div class="product">
-        <h3>Produkt 4: Titel hier</h3>
-        <p>Kurze Beschreibung zu Produkt 4.</p>
-        <button onclick="openCheckout('PRODUCT4_CHECKOUT_LINK')">Jetzt kaufen</button>
-      </div>
-      <!-- Produkt 5 -->
-      <div class="product">
-        <h3>Produkt 5: Titel hier</h3>
-        <p>Kurze Beschreibung zu Produkt 5.</p>
-        <button onclick="openCheckout('PRODUCT5_CHECKOUT_LINK')">Jetzt kaufen</button>
-      </div>
-      <!-- Produkt 6 -->
-      <div class="product">
-        <h3>Produkt 6: Titel hier</h3>
-        <p>Kurze Beschreibung zu Produkt 6.</p>
-        <button onclick="openCheckout('PRODUCT6_CHECKOUT_LINK')">Jetzt kaufen</button>
-      </div>
-      <!-- Produkt 7 -->
-      <div class="product">
-        <h3>Produkt 7: Titel hier</h3>
-        <p>Kurze Beschreibung zu Produkt 7.</p>
-        <button onclick="openCheckout('PRODUCT7_CHECKOUT_LINK')">Jetzt kaufen</button>
-      </div>
-      <!-- Produkt 8 -->
-      <div class="product">
-        <h3>Produkt 8: Titel hier</h3>
-        <p>Kurze Beschreibung zu Produkt 8.</p>
-        <button onclick="openCheckout('PRODUCT8_CHECKOUT_LINK')">Jetzt kaufen</button>
-      </div>
-      <!-- Produkt 9 -->
-      <div class="product">
-        <h3>Produkt 9: Titel hier</h3>
-        <p>Kurze Beschreibung zu Produkt 9.</p>
-        <button onclick="openCheckout('PRODUCT9_CHECKOUT_LINK')">Jetzt kaufen</button>
-      </div>
-      <!-- Produkt 10 -->
-      <div class="product">
-        <h3>Produkt 10: Titel hier</h3>
-        <p>Kurze Beschreibung zu Produkt 10.</p>
-        <button onclick="openCheckout('PRODUCT10_CHECKOUT_LINK')">Jetzt kaufen</button>
-      </div>
-    </div>
-  </div>
+    <div class="productlist">
 
-  <footer>
-    &copy; 2025 Dein Name / Marke. Alle Rechte vorbehalten.
-  </footer>
+      <!-- Product 1 -->
+      <div class="product">
+        <h3>Product 1: Title Here</h3>
+        <p>Short description for product 1. Format: PDF / Image / Video etc.</p>
+        <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT1')">Buy Now</button>
+      </div>
 
-  <script>
-    function openCheckout(checkoutLink) {
-      if (!checkoutLink || checkoutLink === 'PRODUCT1_CHECKOUT_LINK') {
-        alert('Checkout-Link noch nicht konfiguriert.');
-        return;
-      }
-      // Öffne den Checkout-Link in neuem Tab oder Fenster
-      window.open(checkoutLink, '_blank');
-    }
-  </script>
-</body>
-</html>
+      <!-- Product 2 -->
+      <div class="product">
+        <h3>Product 2: Title Here</h3>
+        <p>Short description for product 2.</p>
+        <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT2')">Buy Now</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <h3>Product 3: Title Here</h3>
+        <p>Short description for product 3.</p>
+        <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT3')">Buy Now</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <h3>Product 4: Title Here</h3>
+        <p>Short description for product 4.</p>
+        <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT4')">Buy Now</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product">
+        <h3>Product 5: Title Here</h3>
+        <p>Short description for product 5.</p>
+        <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT5')">Buy Now</button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product">
+        <h3>Product 6: Title Here</h3>
+        <p>Short description for product 6.</p>
+        <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT6')">Buy Now</button>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product">
+        <h3>Product 7: Title Here</h3>
+        <p>Short description for product 7.</p>
+        <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT7')">Buy Now</button>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product">
+        <h3>Product 8: Title Here</h3>
+        <p>Short description for product 8.</p>
+        <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT8')">Buy Now</button>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product">
+        <h3>Product 9: Title Here</h3>
+        <p>Short description for product 9.</p>
+        <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT9')">Buy Now</button>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product">
+        <h3>Product 10: Title Here</h3>
+        <p>Short description for product 10.</p>
+        <button onclick="openCheckout('CHECKOUT_LINK_PRODUCT10')">Buy Now</button>
+      </div>
